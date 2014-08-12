@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:req="http://api-v1.gen.mm.vodafone.com/mminterface/request" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <tns:RequestSOAPHeader xmlns:tns="http://www.huawei.com.cn/schema/common/v2_1">
+            <tns:spId>1</tns:spId>
+            <tns:spPassword>pwd</tns:spPassword>
+            <tns:serviceId>sid</tns:serviceId>
+            <tns:timeStamp>1398341132</tns:timeStamp>
+        </tns:RequestSOAPHeader>
+    </soapenv:Header>
+    <soapenv:Body>
+        <req:RequestMsg>
+                          <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<request xmlns="http://api-v1.gen.mm.vodafone.com/mminterface/request"><Transaction><CommandID>commandId : String</CommandID><LanguageCode>langCode : String</LanguageCode><OriginatorConversationID>originConvId : String</OriginatorConversationID><ConversationID>convId : String</ConversationID><Remark>remark : String</Remark><EncryptedParameters> encParams : String</EncryptedParameters><RefernceData><ReferenceItem><Key>K</Key><Value>V</Value></ReferenceItem><ReferenceItem><Key>X</Key><Value>C</Value></ReferenceItem></RefernceData><Parameters><Parameter><Key>K</Key><Value>V</Value></Parameter><Parameter><Key>X</Key><Value>C</Value></Parameter></Parameters><Timestamp>1398341132</Timestamp></Transaction><Identity><Caller><CallerTypeID>0</CallerTypeID><ThirdPartyID>ThirdPartyID0</ThirdPartyID><Password>Password0</Password><CheckSum>CheckSum0</CheckSum><ResultURL>ResultURL0</ResultURL></Caller><Initiator><IdentifierType>0</IdentifierType><Identifier>ThirdPartyID0</Identifier><ShortCode>CheckSum0</ShortCode><SecurityCredential>Password0</SecurityCredential></Initiator><PrimartyParty><IdentifierType>0</IdentifierType><Identifier>ThirdPartyID0</Identifier><ShortCode>458</ShortCode></PrimartyParty><ReceiverParty><IdentifierType>0</IdentifierType><Identifier>ThirdPartyID0</Identifier><ShortCode>458</ShortCode></ReceiverParty><AccessDevice><IdentifierType>foo</IdentifierType><Identifier>bar</Identifier></AccessDevice></Identity><KeyOwner>PRIV_KEY_SHA256</KeyOwner></request>]]>
+        </req:RequestMsg>
+    </soapenv:Body>
+</soapenv:Envelope>
